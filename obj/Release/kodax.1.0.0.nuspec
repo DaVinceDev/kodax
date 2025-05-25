@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>kodax</id>
+    <version>1.0.0</version>
+    <authors>kodax</authors>
+    <description>Package Description</description>
+    <packageTypes>
+      <packageType name="DotnetTool" />
+    </packageTypes>
+    <repository type="git" />
+  </metadata>
+  <files>
+    <file src="/home/davincedev/Documents/csharp/kodax/obj/DotnetToolSettings.xml" target="tools/net8.0/any/DotnetToolSettings.xml" />
+    <file src="/home/davincedev/Documents/csharp/kodax/bin/Release/net8.0/publish/kodax.dll" target="tools/net8.0/any/kodax.dll" />
+    <file src="/home/davincedev/Documents/csharp/kodax/bin/Release/net8.0/publish/kodax.deps.json" target="tools/net8.0/any/kodax.deps.json" />
+    <file src="/home/davincedev/Documents/csharp/kodax/bin/Release/net8.0/publish/kodax.runtimeconfig.json" target="tools/net8.0/any/kodax.runtimeconfig.json" />
+    <file src="/home/davincedev/Documents/csharp/kodax/bin/Release/net8.0/publish/kodax.pdb" target="tools/net8.0/any/kodax.pdb" />
+  </files>
+</package>

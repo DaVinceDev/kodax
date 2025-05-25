@@ -1,0 +1,14 @@
+/home/davincedev/Documents/csharp/kodax/bin/Debug/net8.0/kodax
+/home/davincedev/Documents/csharp/kodax/bin/Debug/net8.0/kodax.deps.json
+/home/davincedev/Documents/csharp/kodax/bin/Debug/net8.0/kodax.runtimeconfig.json
+/home/davincedev/Documents/csharp/kodax/bin/Debug/net8.0/kodax.dll
+/home/davincedev/Documents/csharp/kodax/bin/Debug/net8.0/kodax.pdb
+/home/davincedev/Documents/csharp/kodax/obj/Debug/net8.0/kodax.GeneratedMSBuildEditorConfig.editorconfig
+/home/davincedev/Documents/csharp/kodax/obj/Debug/net8.0/kodax.AssemblyInfoInputs.cache
+/home/davincedev/Documents/csharp/kodax/obj/Debug/net8.0/kodax.AssemblyInfo.cs
+/home/davincedev/Documents/csharp/kodax/obj/Debug/net8.0/kodax.csproj.CoreCompileInputs.cache
+/home/davincedev/Documents/csharp/kodax/obj/Debug/net8.0/kodax.dll
+/home/davincedev/Documents/csharp/kodax/obj/Debug/net8.0/refint/kodax.dll
+/home/davincedev/Documents/csharp/kodax/obj/Debug/net8.0/kodax.pdb
+/home/davincedev/Documents/csharp/kodax/obj/Debug/net8.0/kodax.genruntimeconfig.cache
+/home/davincedev/Documents/csharp/kodax/obj/Debug/net8.0/ref/kodax.dll
