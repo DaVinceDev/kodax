@@ -1,17 +1,6 @@
 public class TemplateManager
 {
-    private static string[] fullfeature =
-    [
-        // /home/davincedev/Documents/csharp/kodax/templates/full-feature/ControllerTemplate.txt
-        "/home/davincedev/Documents/csharp/kodax/templates/full-feature/ControllerTemplate.txt",
-        "/home/davincedev/Documents/csharp/kodax/templates/full-feature/DocumentationTemplate.txt",
-        "/home/davincedev/Documents/csharp/kodax/templates/full-feature/DTOTemplate.txt",
-        "/home/davincedev/Documents/csharp/kodax/templates/full-feature/InterfaceTemplate.txt",
-        "/home/davincedev/Documents/csharp/kodax/templates/full-feature/ModelTemplate.txt",
-        "/home/davincedev/Documents/csharp/kodax/templates/full-feature/RepositoryTemplate.txt",
-        "/home/davincedev/Documents/csharp/kodax/templates/full-feature/ServiceTemplate.txt",
-        "/home/davincedev/Documents/csharp/kodax/templates/full-feature/ValidatorTemplate.txt",
-    ];
+    private static string[] fullfeature = Directory.GetFiles("templates/full-feature");
 
     public static List<string> ApplyTemplate(Dictionary<string, string> values)
     {

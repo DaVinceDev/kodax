@@ -9,5 +9,9 @@
     <ToolCommandName>kodax</ToolCommandName>
     <PackageOutputPath>./nupkg</PackageOutputPath>
   </PropertyGroup>
-
+  <ItemGroup>
+  <Content Include="templates\**\*">
+    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </Content>
+</ItemGroup>
 </Project>

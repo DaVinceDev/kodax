@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4fHnGUgaxDvKRKU4UbmwaF07bstVpZBQ01yFeeNYI8ug9fcZFpSpU/68PJ09ua7PFBd2t1XRz1xIwa2E5O50JA==",
+  "dgSpecHash": "CT8q33BPXdI=",
   "success": true,
-  "projectFilePath": "/home/davincedev/Documents/csharp/kodax/kodax.csproj",
-  "expectedPackageFiles": [
-    "/home/davincedev/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.15/microsoft.aspnetcore.app.ref.8.0.15.nupkg.sha512"
-  ],
+  "projectFilePath": "/home/davincedev/Projects/kodax/kodax.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
