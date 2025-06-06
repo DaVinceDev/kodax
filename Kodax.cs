@@ -102,4 +102,11 @@ public static class Kodax
         Directory.Delete(path);
         Console.WriteLine("Feature deleted.");
     }
+
+    public static void RmKodax()
+    {
+        Directory.Delete(ROOTDIR, true);
+        Directory.Delete("./Common", true);
+        Console.WriteLine("Kodax changes were removed sucessfuly.");
+    }
 }

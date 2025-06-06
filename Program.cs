@@ -18,7 +18,7 @@ public class Program
         {
             KodaxConfig.Setup();
         }
-        else if(command == "init")
+        else if (command == "init")
         {
             Kodax.InitArch();
         }
@@ -113,6 +113,14 @@ public class Program
             Console.WriteLine(
                 "Here's the current Kodax tool status:\n" + "\nHas 2 working commands."
             );
+        }
+        else if (command == "deinit")
+        {
+            char option = 'N';
+            Console.Write("Are you sure you want to remove kodax project changes?[y/N]:");
+            option = (char)Console.Read();
+
+            if (option == 'y' || option == 'Y') Kodax.RmKodax();
         }
         else
         {
