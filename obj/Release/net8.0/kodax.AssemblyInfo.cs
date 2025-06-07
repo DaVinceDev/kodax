@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("kodax")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a9aabf98a3039d76f305ff35713d252098ad604")]
 [assembly: System.Reflection.AssemblyProductAttribute("kodax")]
 [assembly: System.Reflection.AssemblyTitleAttribute("kodax")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
