@@ -9,60 +9,23 @@ public static class Kodax
             Console.WriteLine("Error! This directory does not exist!");
             return;
         }
-
-        Directory.CreateDirectory($"{ROOTDIR}/{serviceName}");
-        File.Create($"{ROOTDIR}/{serviceName}/{serviceName}Service.cs");
-        File.Create($"{ROOTDIR}/{serviceName}/I{serviceName}Service.cs");
-        if (validator)
-            File.Create($"{ROOTDIR}/{serviceName}/{serviceName}Validator.cs");
-        if (docs)
-            File.Create($"{ROOTDIR}/{serviceName}/{serviceName}Documentation.md");
-
         Console.WriteLine($"Service {serviceName} was created!");
     }
 
-    public static void CreateFeature(string featname, bool fullFeature, bool docs, bool validator)
+    public static void CreateFeatureCopy(string featname)
     {
+
         if (!Directory.Exists(ROOTDIR))
         {
             Console.WriteLine("Error! This directory does not exist!");
             return;
         }
 
-        if (!fullFeature)
-        {
-            Directory.CreateDirectory($"{ROOTDIR}/{featname}");
+        Directory.CreateDirectory($"{ROOTDIR}/{featname}");
 
-            var output = TemplateManager.ApplyTemplate(
-                new() { { "FeatureName", featname }, { "Namespace", $"Feature.{featname}" } }
-            );
-
-            File.WriteAllTextAsync($"{ROOTDIR}/{featname}/{featname}Controller.cs", output[0]);
-            if (docs)
-                File.WriteAllTextAsync(
-                    $"{ROOTDIR}/{featname}/{featname}Documentation.cs",
-                    output[1]
-                );
-            File.WriteAllTextAsync($"{ROOTDIR}/{featname}/{featname}DTO.cs", output[2]);
-            File.WriteAllTextAsync($"{ROOTDIR}/{featname}/I{featname}Repository.cs", output[3]);
-            File.WriteAllTextAsync($"{ROOTDIR}/{featname}/{featname}.cs", output[4]);
-            File.WriteAllTextAsync($"{ROOTDIR}/{featname}/{featname}Repository.cs", output[5]);
-            File.WriteAllTextAsync($"{ROOTDIR}/{featname}/{featname}Service.cs", output[6]);
-            if (validator)
-                File.WriteAllTextAsync($"{ROOTDIR}/{featname}/{featname}Validator.cs", output[7]);
-        }
-        else
-        {
-            Directory.CreateDirectory($"{ROOTDIR}/{featname}");
-            File.Create($"{ROOTDIR}/{featname}/{featname}.cs");
-            File.Create($"{ROOTDIR}/{featname}/{featname}Controller.cs");
-            File.Create($"{ROOTDIR}/{featname}/{featname}DTO.cs");
-            if (docs)
-                File.Create($"{ROOTDIR}/{featname}/{featname}Documentation.md");
-        }
-        Console.WriteLine($"Feature {featname} was created!");
+        TemplateManager.ApplyTemplate($"{ROOTDIR}/{featname}", new(){ {"FeatureName", featname }, { "Namespace", $"Feature.{featname}" } });
     }
-
+    
     public static void AddOns(string featname, string type)
     {
         if (!File.Exists($"{ROOTDIR}/{featname}"))
@@ -99,7 +62,7 @@ public static class Kodax
     public static void RmFeature(string featname)
     {
         string path = $"{ROOTDIR}/{featname}";
-        Directory.Delete(path);
+        Directory.Delete(path, true);
         Console.WriteLine("Feature deleted.");
     }
 

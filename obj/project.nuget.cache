@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ucjfj/p6PKs=",
+  "dgSpecHash": "wVLZkcjHKEg=",
   "success": true,
   "projectFilePath": "/home/davincedev/Projects/kodax/kodax.csproj",
-  "expectedPackageFiles": [
-    "/home/davincedev/.nuget/packages/microsoft.net.illink.tasks/8.0.15/microsoft.net.illink.tasks.8.0.15.nupkg.sha512",
-    "/home/davincedev/.nuget/packages/microsoft.netcore.app.runtime.osx-arm64/8.0.15/microsoft.netcore.app.runtime.osx-arm64.8.0.15.nupkg.sha512",
-    "/home/davincedev/.nuget/packages/microsoft.aspnetcore.app.runtime.osx-arm64/8.0.15/microsoft.aspnetcore.app.runtime.osx-arm64.8.0.15.nupkg.sha512",
-    "/home/davincedev/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.15/microsoft.netcore.app.host.osx-arm64.8.0.15.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

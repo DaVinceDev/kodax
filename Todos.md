@@ -15,3 +15,7 @@ Polish methods and release v0
 ## Todo 3
 
 Fix messy templates 
+
+## New solution: Copy Templates
+
+Done!

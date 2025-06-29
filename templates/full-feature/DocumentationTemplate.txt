@@ -1,3 +1,0 @@
-# {{FeatureName}} Documentation
-
-<!--TODO: Write here your feature usage-->

@@ -1,22 +1,24 @@
 public class TemplateManager
 {
-    private static string[] fullfeature = Directory.GetFiles("templates/full-feature");
+    private static string[] fullfeature = Directory.GetFiles(
+    Path.Combine([
+    Environment.GetEnvironmentVariable("HOME") ?? throw new Exception("HOME env variable is not set."),
+    ".config",
+    "kodax",
+    "templates",
+    "full-feature"
+    ]));
 
-    public static List<string> ApplyTemplate(Dictionary<string, string> values)
+    public static void ApplyTemplate(string featpath, Dictionary<string, string> values)
     {
-        List<string> templates = [];
-
         for (int i = 0; i < fullfeature.Length; i++)
         {
             var content = File.ReadAllText(fullfeature[i]);
             foreach (var kv in values)
             {
-                content = content.Replace($"{{{{{kv.Key}}}}}", kv.Value);
+                content = content.Replace($"{{{{{kv.Key}}}}}", kv.Value).Replace("//","");
             }
-
-            templates.Add(content);
+            File.WriteAllText($"{featpath}/{Path.GetFileName(fullfeature[i])}", content);
         }
-
-        return templates;
     }
 }

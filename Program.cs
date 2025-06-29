@@ -1,4 +1,4 @@
-﻿using System.Globalization;
+using System.Globalization;
 
 public class Program
 {
@@ -44,7 +44,9 @@ public class Program
                     bool isSimple = args.Contains("-s") || args.Contains("--simple");
                     bool withDocs = args.Contains("-nd") || args.Contains("--no-docs");
                     bool withValidator = args.Contains("-nv") || args.Contains("--no-val");
-                    Kodax.CreateFeature(featname, isSimple, withDocs, withValidator);
+                    // Kodax.CreateFeature(featname, isSimple, withDocs, withValidator);
+                    Kodax.CreateFeatureCopy(featname);
+                    
                 }
                 else if (commandType == "sv" || commandType == "simple")
                 {
@@ -121,6 +123,11 @@ public class Program
             option = (char)Console.Read();
 
             if (option == 'y' || option == 'Y') Kodax.RmKodax();
+        }
+        else if (command == "rm"){
+            TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
+            var featname = textInfo.ToTitleCase(args[1]);
+            Kodax.RmFeature(featname);
         }
         else
         {

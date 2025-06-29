@@ -42,14 +42,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "Microsoft.NET.ILLink.Tasks": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.15, )",
-              "autoReferenced": true
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -61,31 +53,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Runtime.osx-arm64",
-              "version": "[8.0.15, 8.0.15]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.osx-arm64",
-              "version": "[8.0.15, 8.0.15]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Runtime.osx-arm64",
-              "version": "[8.0.15, 8.0.15]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/nix/store/0apc5ixbwr3zq7wv4mck1nz1whjpacdx-dotnet-sdk-8.0.408/share/dotnet/sdk/8.0.408/PortableRuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "osx-arm64": {
-          "#import": []
+          "runtimeIdentifierGraphPath": "/nix/store/y3ig4imqiqchbnn8jfi4ha1c9kw0ggyw-dotnet-sdk-8.0.411/share/dotnet/sdk/8.0.411/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
