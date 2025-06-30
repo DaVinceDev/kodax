@@ -5,12 +5,12 @@ when it comes to start a new API in C# since it takes up to 10 mins to have a so
 have a decent base.
 
 
-# Inspiration
+## Inspiration
 
 Kodax was inspired by ng (The angular cli tool), as well for the architecture(feature-based). I like the way my frontend is organized,
 with all features having its own space so I decided to take that inspiration and project it to make Kodax.
 
-# Instalation
+## Instalation
 
 The instalation process is very simple:
 
@@ -30,9 +30,18 @@ kodax # Start using it
 
 For Windows:
 
-Not sure yet(maybe same process except for the chmod part)
+Download the .exe
+Move to a dot directory like (:C/.local/bin)
+Add that directory to your path
+Maybe reboot and then enjoy it 
 
-# Why the name Kodax?
+### About the templates
+
+For the templates, you need to download the source code and copy the templates folder to this path ``` .config/kodax/ ```, you have to create it(duh).
+
+After that run ``` kodax setup ``` to make sure everything is set.
+
+### Why the name Kodax?
 
 Sounds cool and catchy.
 
@@ -41,7 +50,7 @@ Sounds cool and catchy.
 Contribuitions are accepted but major decisions will be decided by me (the creator of the tool). But feel free to make PR's, issue and
 even suggest some ideas that could make Kodax a lot cooler.
 
-# The future of Kodax
+## The future of Kodax
 
 I imagine Kodax as THE project architect for .NET applications(and maybe even out of scope of C#), being able to detect the nature of
 the project, having custom architecture choices and more without any bloat(I hate slow tools from the heart).
