@@ -10,6 +10,11 @@ have a decent base.
 Kodax was inspired by ng (The angular cli tool), as well for the architecture(feature-based). I like the way my frontend is organized,
 with all features having its own space so I decided to take that inspiration and project it to make Kodax.
 
+
+### Why the name Kodax?
+
+Sounds cool and catchy.
+
 ## Instalation
 
 The instalation process is very simple:
@@ -40,10 +45,6 @@ Maybe reboot and then enjoy it
 For the templates, you need to download the source code and copy the templates folder to this path ``` .config/kodax/ ```, you have to create it(duh).
 
 After that run ``` kodax setup ``` to make sure everything is set.
-
-### Why the name Kodax?
-
-Sounds cool and catchy.
 
 # About contributions
 
