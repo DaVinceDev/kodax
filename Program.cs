@@ -44,17 +44,17 @@ public class Program
                     bool isSimple = args.Contains("-s") || args.Contains("--simple");
                     bool withDocs = args.Contains("-nd") || args.Contains("--no-docs");
                     bool withValidator = args.Contains("-nv") || args.Contains("--no-val");
-                    // Kodax.CreateFeature(featname, isSimple, withDocs, withValidator);
-                    Kodax.CreateFeatureCopy(featname);
-                    
+                    Kodax.CreateFeature(featname);
+
                 }
                 else if (commandType == "sv" || commandType == "simple")
                 {
-                    TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
-                    var featname = textInfo.ToTitleCase(args[2]);
-                    bool withDocs = args.Contains("-nd") || args.Contains("--no-docs");
-                    bool withValidator = args.Contains("-nv") || args.Contains("--no-val");
-                    Kodax.CreateService(featname, withDocs, withValidator);
+                    Console.WriteLine("Still working on it! ...");
+                    // TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
+                    // var featname = textInfo.ToTitleCase(args[2]);
+                    // bool withDocs = args.Contains("-nd") || args.Contains("--no-docs");
+                    // bool withValidator = args.Contains("-nv") || args.Contains("--no-val");
+                    // Kodax.CreateService(featname, withDocs, withValidator);
                 }
                 else
                 {
@@ -124,7 +124,8 @@ public class Program
 
             if (option == 'y' || option == 'Y') Kodax.RmKodax();
         }
-        else if (command == "rm"){
+        else if (command == "rm")
+        {
             TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
             var featname = textInfo.ToTitleCase(args[1]);
             Kodax.RmFeature(featname);

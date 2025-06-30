@@ -6,18 +6,18 @@ public static class Kodax
     {
         if (!Directory.Exists(ROOTDIR))
         {
-            Console.WriteLine("Error! This directory does not exist!");
+            Console.WriteLine("Error! Feature does not exist!");
             return;
         }
         Console.WriteLine($"Service {serviceName} was created!");
     }
 
-    public static void CreateFeatureCopy(string featname)
+    public static void CreateFeature(string featname)
     {
 
         if (!Directory.Exists(ROOTDIR))
         {
-            Console.WriteLine("Error! This directory does not exist!");
+            Console.WriteLine("Error! This Feature does not exist!");
             return;
         }
 
